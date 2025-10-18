@@ -5,6 +5,10 @@ body, html {
   height: 100%;
   font-family: 'Trebuchet MS', sans-serif;
   background: radial-gradient(circle at center, #ff0066, #33001a);
+
+  display: flex;
+  justify-content: center;   /* экран ортасына */
+  align-items: center;       /* экран ортасына */
 }
 
 #overlay {
@@ -17,7 +21,7 @@ body, html {
 }
 
 #overlay h1 {
-  font-size: 3em;
+  font-size: 2em;  /* смартфонға жақсырақ */
   text-shadow: 0 0 20px #ff3399, 0 0 40px #ff66cc;
   animation: glow 2s infinite alternate;
 }
@@ -29,4 +33,10 @@ body, html {
 
 canvas {
   display: block;
+  width: 360px;   /* смартфон ені */
+  height: 640px;  /* смартфон биіктігі */
+  max-width: 100%;   /* экраннан шықпасын */
+  max-height: 100%;
+  border-radius: 15px; /* әдемі болсын десеңіз */
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
 }
